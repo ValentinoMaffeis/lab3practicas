@@ -6,7 +6,10 @@ function AddTask({addTask}){
 
   const handleSubmit=(e)=>{
     e.preventDefault()
-    addTask(input)
+    if (input.trim()==="") return alert("Complete el campo.");
+    addTask(input);
+    setInput("");
+
 
 
   }

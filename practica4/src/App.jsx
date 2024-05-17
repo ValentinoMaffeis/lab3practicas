@@ -28,11 +28,13 @@ function App() {
 
   }
 
+  
+
   return (
     <div>
       <h1>Lista de Tareas</h1>
       <AddTask addTask={addTask}/>
-      <Tasks eliminateTask={eliminateTask} complete={complete} tasks={tasks}/>
+      <Tasks eliminateTask={eliminateTask} complete={complete}  tasks={tasks}/>
 
     </div>
   )
